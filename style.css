@@ -1,0 +1,300 @@
+/* Reset Styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+/* Header Styles */
+
+header {
+	background-color: #000;
+	color: #fff;
+	padding: 20px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav ul {
+display: flex;
+align-items: center;
+}
+
+nav li {
+margin: 0 20px;
+}
+
+.hero-section {
+text-align: center;
+margin-top: 60px;
+}
+
+.hero-section h1 {
+font-size: 48px;
+margin-bottom: 20px;
+}
+
+.hero-section h2 {
+font-size: 24px;
+}
+
+/* About Me Section Styles */
+
+.about-me {
+	padding: 80px 0;
+	text-align: center;
+}
+
+.about-me h2 {
+	font-size: 36px;
+	margin-bottom: 40px;
+}
+
+.about-me img {
+	display: block;
+	margin: 0 auto;
+	max-width: 200px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 50%;
+	filter: grayscale(100%) brightness(70%);
+	transition: all 0.2s ease-in-out;
+}
+
+.about-me img:hover {
+	filter: grayscale(0%) brightness(100%);
+	transform: rotate(360deg) scale(1.1);
+}
+
+.about-me p {
+	font-size: 20px;
+	margin-top: 40px;
+	line-height: 1.5;
+}
+
+/* Gallery Section Styles */
+
+.gallery {
+	padding: 80px 0;
+	text-align: center;
+}
+
+.gallery h2 {
+	font-size: 36px;
+	margin-bottom: 40px;
+}
+
+.gallery-images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+.gallery-images img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	opacity: 0.9;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
+}
+
+.gallery-images img:hover {
+	transform: scale(1.1);
+	opacity: 1;
+}
+
+/* Book an Appointment Section Styles */
+
+.book-appointment {
+	background-color: #333;
+	color: #fff;
+	padding: 80px 0;
+	text-align: center;
+}
+
+.book-appointment h2 {
+	font-size: 36px;
+	margin-bottom: 40px;
+}
+
+.book-appointment form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.book-appointment label {
+	font-size: 20px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.book-appointment input[type="text"],
+.book-appointment input[type="email"],
+.book-appointment input[type="date"],
+.book-appointment input[type="time"] {
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	border-bottom: 2px solid #fff;
+	padding: 10px 20px;
+	margin-bottom: 40px;
+	font-size: 20px;
+	width: 100%;
+}
+
+.book-appointment input[type="submit"] {
+	background-color: #fff;
+	color: #333;
+	border: none;
+	padding: 10px 40px;
+	border-radius: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.book-appointment input[type="submit"]:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+/* Footer Styles */
+
+footer {
+background-color: #f2f2f2;
+padding: 20px 40px;
+text-align: center;
+font-size: 18px;
+margin-top: 80px;
+}
+  
+/* Contact me Styles */
+
+.contact-me {
+	background-color: #1c1c1c;
+	color: #fff;
+	padding: 80px 0;
+}
+
+.contact-me h2 {
+	font-size: 48px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.contact-me p {
+	font-size: 24px;
+	line-height: 1.5;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.contact-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-info .phone,
+.contact-info .email {
+	margin-right: 50px;
+}
+
+.contact-info i {
+	font-size: 40px;
+	margin-right: 20px;
+}
+
+.contact-info p {
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+.contact-info a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+	border-bottom: 1px solid transparent;
+}
+
+form {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  input[type="submit"] {
+    background-color: #5bc0de;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #31b0d5;
+  }
+  
+  input[type="submit"]:active {
+    transform: translateY(2px);
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nirajan Saud - Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#aboutme">About</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+				<li><a href="#book">Book an Appointment</a></li>
+			</ul>
+		</nav>
+		<div class="hero-section">
+			<h1>Nirajan Saud</h1>
+			<h2>Entrepreneur</h2>
+		</div>
+	</header>
+
+	<section id="aboutme" class="about-me">
+		<div class="container">
+			<div class="image-wrapper">
+				<img src="nirajan.jpg" alt="Nirajan Saud">
+			</div>
+			<div class="details-wrapper">
+				<h2>About Me</h2>
+				<p>I am a young artist based in Kathmandu. My work is a reflection of my experiences and emotions, and I love to experiment with different mediums and techniques to create unique pieces of art. My goal is to inspire and connect with others through my work.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="gallery" class="gallery">
+		<h2>Gallery</h2>
+		<div class="gallery-images">
+			<img src="gallery1.jpg" alt="Gallery Image 1">
+			<img src="gallery2.jpg" alt="Gallery Image 2">
+			<img src="gallery3.jpg" alt="Gallery Image 3">
+			<img src="gallery4.jpg" alt="Gallery Image 4">
+			<img src="gallery5.jpg" alt="Gallery Image 5">
+			<img src="gallery6.jpg" alt="Gallery Image 6">
+		</div>
+	</section>
+    <section id="contact" class="contact-me">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to contact me by phone or email:</p>
+            <div class="contact-info">
+                <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    <p>Phone: <a href="tel:9866100729">986-610-0729</a></p>
+                </div>
+                <div class="email">
+                    <i class="fa fa-envelope"></i>
+                    <p>Email: <a href="mailto:saudnirajan3@gmail.com">saudnirajan3@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+	<section id="book" class="book-appointment">
+		<h2>Book an Appointment</h2>
+		<form id="appointment-form" method="post" action="mailto:saudnirajan3@gmail.com" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+            <input type="submit" value="Book Now">
+          </form>      
+	</section>
+
+	<footer>
+		<p>&copy; 2023 Nirajan Saud. All rights reserved.</p>
+	</footer>
+</body>
+</html>
